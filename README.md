@@ -1,8 +1,11 @@
 # Flask-App-for-Image-Classification
 
 
+
 This web application acts as a **public API** for **image classification**.  Under the hood, it leverages the power of `PyTorch`, a deep learning framework, to process input images.
-This project focuses on deploying a pre-trained `PyTorch` **computer vision** **deep learning** model as a public API using `Heroku`. Essentially, you can send an image to this web app using API, and it will utilize a pre-trained model to analyze the image and provide the most probable classification from the vast **ImageNet** database.
+This project focuses on deploying a pre-trained `PyTorch` **computer vision** **deep learning** model as a public API using `Heroku`. Essentially, you can send an image to this web app, and it will utilize a pre-trained model `ResNet50` trained on **IMAGENET1K_V1** to classify the image and provide the **top 5** probable class from the **ImageNet** database.
+
+![Result](readme/result.png)
 
 **Functionality**: Image Classification  
 **Model**: Pre-trained `PyTorch` model (trained on **ImageNet** dataset)  
@@ -15,7 +18,7 @@ Build and deploy a **REST API** that can classify images using a pre-trained `Py
 
 ## Tech Stack:
 - Programming Language: `Python`
-- Deep Learning Framework: `PyTorch`
+- Deep Learning Framework: `PyTorch` *CPU*
 - Web Framework: `Flask`
 - Cloud Platform: `Heroku`
 - Version Control System: `Git`

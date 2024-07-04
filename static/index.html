@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification Web App</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Classification</h1>
+        <form id="upload-form" method="POST" action="/predict?topk=5" enctype="multipart/form-data">
+            <div class="image-upload">
+                <label for="image-input" class="upload-label">Choose an image</label>
+                <input type="file" id="image-input" name="image" accept="image/*" required>
+                <div id="image-container" class="image-container" style="display: none;">
+                    <img id="selected-image" src="#" alt="Selected Image">
+                </div>
+            </div>
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="button" id="clear-btn" style="display: none;">Clear</button>
+        </form>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="result" style="display: none;"></div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Follow me on:</p>
+            <a href="https://github.com/Amirtmgr" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/amirthapamagar/" target="_blank">LinkedIn</a>
+            <a href="mailto:amir.thapamagar01@gmail.com">Email</a>
+            <a href="http://amirtm.me" target="_blank">Website</a>
+        </div>
+    </footer>
+    <!-- <footer>
+        <div class="footer-content">
+            <p>Contact me on:</p>
+            <a href="https://github.com/Amirtmgr" target="_blank"><img src="res/github.png" alt="GitHub" class="icon"></a>
+            <a href="https://www.linkedin.com/in/amirthapamagar/" target="_blank"><img src="res/linkedin.png" alt="LinkedIn" class="icon"></a>
+            <a href="mailto:amir.thapamagar01@gmail.com"><img src="email.png" alt="Email" class="icon"></a>
+            <a href="http://amirtm.me" target="_blank"><img src="website.png" alt="Website" class="icon"></a>
+        </div>
+    </footer> -->
+    <script src="static/script.js"></script>
+</body>
+</html>
