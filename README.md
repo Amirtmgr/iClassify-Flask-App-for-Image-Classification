@@ -1,4 +1,4 @@
-# Flask-App-for-Image-Classification
+# iClassify: Containerized Flask App for Image Classification
 
 Check out at [https://bref-madame-89020-2d391c96f102.herokuapp.com/](https://bref-madame-89020-2d391c96f102.herokuapp.com/) hosted on Heroku dyno.
 
