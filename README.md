@@ -15,6 +15,16 @@ Essentially, you can send an image to this web app, and it will utilize a pre-tr
 ## Goal
 Build and deploy a **REST API** that can classify images using a pre-trained `PyTorch` model.
 
+## Project Structure
+```
+.
+├── app.py                  # Main Flask application file
+├── requirements.txt        # Text file listing dependencies
+├── Dockerfile   # Dockerfile for building the image
+├── models                   # Directory for model files
+├── utils                   # Directory for utility functions
+└── ...                     # Other application-specific files
+```
 
 ## Tech Stack:
 - Programming Language: `Python`
@@ -23,6 +33,7 @@ Build and deploy a **REST API** that can classify images using a pre-trained `Py
 - Cloud Platform: `Heroku`
 - Version Control System: `Git`
 - API Testing Tool: `Postman`
+- Containerization: `Docker`
 
 ## Deployment Method via Containerization:
 
@@ -56,16 +67,7 @@ Build and deploy a **REST API** that can classify images using a pre-trained `Py
 ## Result:
 ![result2](/readme/result_01.png)
 
-## Project Structure
-```
-.
-├── app.py                  # Main Flask application file
-├── requirements.txt        # Text file listing dependencies
-├── Dockerfile   # Dockerfile for building the image
-├── models                   # Directory for model files
-├── utils                   # Directory for utility functions
-└── ...                     # Other application-specific files
-```
+
 
 </div><h3 align="left">Connect with me:</h3>
 <div> <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/amirthapamagar/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
