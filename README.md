@@ -1,6 +1,6 @@
 # iClassify: Containerized Flask App for Image Classification
 
-Check out at [https://bref-madame-89020-2d391c96f102.herokuapp.com/](https://bref-madame-89020-2d391c96f102.herokuapp.com/) hosted on Heroku dyno.
+Check out at [https://iclassify-f53fc37b9434.herokuapp.com/](https://iclassify-f53fc37b9434.herokuapp.com/) hosted on Heroku dyno.
 
 This is a containerized `Flask` application for **image classification** deployed on `Heroku` dyno. Under the hood, it leverages the power of `PyTorch`, a deep learning framework, to process input images and `Docker` for containerization and `Heroku` for hosting.
 Essentially, you can send an image to this web app, and it will utilize a pre-trained model `ResNet50` trained on **IMAGENET1K_V1** to classify the image and provide the **top 5** probable class from the **ImageNet** database.
